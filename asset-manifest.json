@@ -1,15 +1,22 @@
 {
   "files": {
-    "main.css": "/react-hometasks/static/css/main.b9bbd36c.css",
-    "main.js": "/react-hometasks/static/js/main.e12bf49e.js",
+    "main.css": "/react-hometasks/static/css/main.0a42f3f8.css",
+    "main.js": "/react-hometasks/static/js/main.3a947dc2.js",
     "static/js/787.c8a8309b.chunk.js": "/react-hometasks/static/js/787.c8a8309b.chunk.js",
+    "static/media/4-debug.jpg": "/react-hometasks/static/media/4-debug.fd5109ec79b28034fd14.jpg",
+    "static/media/8-sink.jpg": "/react-hometasks/static/media/8-sink.cbffda57223691d09881.jpg",
+    "static/media/6-kostil.jpg": "/react-hometasks/static/media/6-kostil.f7953c46596f4be929aa.jpg",
+    "static/media/2-popugay.jpg": "/react-hometasks/static/media/2-popugay.d0c41d2e7d8bf2f5b336.jpg",
+    "static/media/1-asembler.jpg": "/react-hometasks/static/media/1-asembler.5c825db9170afa4fa019.jpg",
+    "static/media/7-age.jpg": "/react-hometasks/static/media/7-age.6de8bdc214c14cce40d1.jpg",
+    "static/media/3-regex.jpg": "/react-hometasks/static/media/3-regex.4b8c44efcebfbb3bb4dc.jpg",
     "index.html": "/react-hometasks/index.html",
-    "main.b9bbd36c.css.map": "/react-hometasks/static/css/main.b9bbd36c.css.map",
-    "main.e12bf49e.js.map": "/react-hometasks/static/js/main.e12bf49e.js.map",
+    "main.0a42f3f8.css.map": "/react-hometasks/static/css/main.0a42f3f8.css.map",
+    "main.3a947dc2.js.map": "/react-hometasks/static/js/main.3a947dc2.js.map",
     "787.c8a8309b.chunk.js.map": "/react-hometasks/static/js/787.c8a8309b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b9bbd36c.css",
-    "static/js/main.e12bf49e.js"
+    "static/css/main.0a42f3f8.css",
+    "static/js/main.3a947dc2.js"
   ]
 }
