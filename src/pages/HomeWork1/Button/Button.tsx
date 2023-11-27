@@ -7,10 +7,11 @@ interface ButtonProps {
   animationTime?: number;
   disabled?: boolean;
   children: ReactNode;
+  padding?: string;
 }
 
 export const Button: FC<ButtonProps> = (props) => {
-  const { onClick, animationTime = 200, disabled, children } = props;
+  const { onClick, animationTime = 200, disabled, children, padding } = props;
   const [disableBtn, setDisableBtn] = useState<boolean>(false);
 
   const handleClick = () => {
@@ -26,7 +27,17 @@ export const Button: FC<ButtonProps> = (props) => {
       onClick={handleClick}
       className={s.btn}
       disabled={disableBtn || disabled}
-      style={disableBtn ? { top: '2px', boxShadow: 'none' } : {}}
+      style={
+        disableBtn
+          ? {
+              top: '2px',
+              boxShadow: 'none',
+              padding: padding ? `${padding}` : '',
+            }
+          : padding
+          ? { padding: `${padding}` }
+          : {}
+      }
     >
       {children}
     </button>
