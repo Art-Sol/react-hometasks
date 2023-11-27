@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/react-hometasks/static/css/main.0a42f3f8.css",
-    "main.js": "/react-hometasks/static/js/main.3a947dc2.js",
+    "main.css": "/react-hometasks/static/css/main.3b3a068b.css",
+    "main.js": "/react-hometasks/static/js/main.ee10abcc.js",
     "static/js/787.c8a8309b.chunk.js": "/react-hometasks/static/js/787.c8a8309b.chunk.js",
     "static/media/4-debug.jpg": "/react-hometasks/static/media/4-debug.fd5109ec79b28034fd14.jpg",
     "static/media/8-sink.jpg": "/react-hometasks/static/media/8-sink.cbffda57223691d09881.jpg",
@@ -11,12 +11,15 @@
     "static/media/7-age.jpg": "/react-hometasks/static/media/7-age.6de8bdc214c14cce40d1.jpg",
     "static/media/3-regex.jpg": "/react-hometasks/static/media/3-regex.4b8c44efcebfbb3bb4dc.jpg",
     "index.html": "/react-hometasks/index.html",
-    "main.0a42f3f8.css.map": "/react-hometasks/static/css/main.0a42f3f8.css.map",
-    "main.3a947dc2.js.map": "/react-hometasks/static/js/main.3a947dc2.js.map",
+    "static/media/arrow-down.svg": "/react-hometasks/static/media/arrow-down.1bc87a8b9da6204c31263afe340dc3ff.svg",
+    "static/media/arrow-up.svg": "/react-hometasks/static/media/arrow-up.6829a0a34244473604783eb9b2089b24.svg",
+    "static/media/minus.svg": "/react-hometasks/static/media/minus.fea386b29eff60a30f0d7d87c354dbd4.svg",
+    "main.3b3a068b.css.map": "/react-hometasks/static/css/main.3b3a068b.css.map",
+    "main.ee10abcc.js.map": "/react-hometasks/static/js/main.ee10abcc.js.map",
     "787.c8a8309b.chunk.js.map": "/react-hometasks/static/js/787.c8a8309b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0a42f3f8.css",
-    "static/js/main.3a947dc2.js"
+    "static/css/main.3b3a068b.css",
+    "static/js/main.ee10abcc.js"
   ]
 }
