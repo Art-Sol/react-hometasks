@@ -1,6 +1,7 @@
 import { FC, useCallback, useRef, useState } from 'react';
 
 import s from './HomeWork4.module.css';
+import { useCustomRef } from './useCustomRef';
 
 const getRandom = (min: number, max: number) => {
   let result = min + Math.random() * (max + 1 - min);
