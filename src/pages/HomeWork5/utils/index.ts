@@ -1,0 +1,1 @@
+export { getWordsList } from './getWordsList';

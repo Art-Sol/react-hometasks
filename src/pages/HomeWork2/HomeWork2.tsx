@@ -46,8 +46,8 @@ export const HomeWork2 = () => {
         </div>
         {/*  */}
 
-        {mems.map((mem, i) => (
-          <div key={i} className={s.pageBlock}>
+        {mems.map((mem) => (
+          <div key={mem} className={s.pageBlock}>
             <img src={mem} alt='mem' />
           </div>
         ))}

@@ -1,5 +1,5 @@
 import React, { FC, useMemo } from 'react';
-import { Button } from '../../../../HomeWork1/Button';
+import { Button } from '../../../../../components/ui-kit/Button';
 
 import ArrowUp from '../../../assets/arrow-up.svg';
 import ArrowDown from '../../../assets/arrow-down.svg';

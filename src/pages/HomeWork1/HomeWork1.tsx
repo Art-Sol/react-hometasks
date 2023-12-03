@@ -1,7 +1,7 @@
 import { useState, FC, useMemo } from 'react';
 
 import { Cube } from './Cube';
-import { Button } from './Button';
+import { Button } from '../../components/ui-kit/Button';
 
 import s from './HomeWork.module.css';
 
