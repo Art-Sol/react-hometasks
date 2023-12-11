@@ -1,4 +1,4 @@
-import { FC, useCallback, useRef, useState } from 'react';
+import { FC, useRef } from 'react';
 
 import s from './HomeWork4.module.css';
 import { useCustomRef } from './useCustomRef';
@@ -8,64 +8,39 @@ const getRandom = (min: number, max: number) => {
   return Math.floor(result);
 };
 
-interface ICustomRefObject {
-  current: any;
-}
+const addColor = (button: HTMLButtonElement | null | undefined) => {
+  if (!button) return;
 
-const customRefObj: ICustomRefObject = { current: undefined };
+  const red = getRandom(0, 255);
+  const green = getRandom(0, 255);
+  const blue = getRandom(0, 255);
+
+  if (button !== null) {
+    button.style.backgroundColor = `rgb(${red} ${green} ${blue})`;
+  }
+};
 
 export const HomeWork4: FC = () => {
-  //////////// Блок кода с классическим реактовским рефом
   const reactRef = useRef<HTMLButtonElement>(null);
+  const customRef = useCustomRef<HTMLButtonElement>(null);
 
-  const handleClickWithReactRef = () => {
+  const handleClickReactRef = () => {
     const button = reactRef.current;
-    if (!button) return;
-
-    const red = getRandom(0, 255);
-    const green = getRandom(0, 255);
-    const blue = getRandom(0, 255);
-
-    if (button !== null) {
-      button.style.backgroundColor = `rgb(${red} ${green} ${blue})`;
-    }
+    addColor(button);
   };
-  ////////////////
 
-  //////////// Блок кода с кастомным решением для рефа
-  //////////// долго сидел, так и не придумал ничего умнее чем,
-  //////////// просто глобальный объект создать
-  const [customRef, setCustomRef] = useState(customRefObj);
-
-  const myRef = useCallback((element: any) => {
-    setCustomRef((prev) => ({ ...prev, current: element }));
-  }, []);
-
-  const handleClickWithCustomRef = () => {
+  const handleClickCustomRef = () => {
     const button = customRef.current;
-    if (!button) return;
-
-    const red = getRandom(0, 255);
-    const green = getRandom(0, 255);
-    const blue = getRandom(0, 255);
-
-    if (button !== null) {
-      button.style.backgroundColor = `rgb(${red} ${green} ${blue})`;
-    }
+    addColor(button);
   };
-  ////////////
 
   return (
     <div className={s.wrapper}>
       <h2 className={s.title}>Кастомная реализация хука React.useRef()</h2>
-      <button
-        className={s.btn}
-        ref={reactRef}
-        onClick={handleClickWithReactRef}
-      >
+      <button className={s.btn} ref={reactRef} onClick={handleClickReactRef}>
         React Ref Button
       </button>
-      <button className={s.btn} ref={myRef} onClick={handleClickWithCustomRef}>
+      <button className={s.btn} ref={customRef} onClick={handleClickCustomRef}>
         Custom Ref Button
       </button>
     </div>

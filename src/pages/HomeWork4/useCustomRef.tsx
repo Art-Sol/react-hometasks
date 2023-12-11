@@ -1,18 +1,11 @@
-import { useEffect, useState } from 'react';
+import { useMemo } from 'react';
 
-interface ICustomRefObject {
-  current: any;
-}
-
-// Не смог реализовать
-export const useCustomRef = (element: any) => {
-  const [ref, setRef] = useState<ICustomRefObject>({ current: undefined });
-
-  useEffect(() => {
-    if (element !== undefined) {
-      setRef((prev) => ({ ...prev, current: element }));
+export function useCustomRef<T>(initialValue?: T | null) {
+  return useMemo(() => {
+    function F(htmlElement: T) {
+      F.current = htmlElement;
     }
-  }, [element]);
-
-  return ref;
-};
+    F.current = initialValue;
+    return F;
+  }, []);
+}
